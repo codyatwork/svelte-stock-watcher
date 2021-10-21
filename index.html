@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Svelte Stock Watcher</title><meta name="description" content="Simple web application for a user to add basic stock tickers to a dashboard." data-svelte="svelte-174pgxq"><link rel="preconnect" href="https://fonts.googleapis.com" data-svelte="svelte-174pgxq"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin data-svelte="svelte-174pgxq"><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet" data-svelte="svelte-174pgxq">
+
+		
+
+		<link rel="modulepreload" href="/_app/start-7d7a3acd.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-c7813dcc.js">
+		<link rel="modulepreload" href="/_app/layout.svelte-55b46675.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-4d82a720.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-6a2ff5fa.css">
+
+		<script type="module">
+			import { start } from "/_app/start-7d7a3acd.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/layout.svelte-55b46675.js"),
+						import("/_app/pages/index.svelte-4d82a720.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002F",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+    </head>
+    <body>
+        <div id="svelte">
+
+
+
+
+<div class="container svelte-tz04mn"><h1 class="heading svelte-tz04mn">Stock Watcher</h1>
+    <form class="add-input-group svelte-tz04mn"><input class="add-input svelte-tz04mn" type="text" placeholder="Enter stock symbol" value="">
+        <button class="add-button svelte-tz04mn">Add<span class="verbose-button-text svelte-tz04mn"> Stock</span></button></form>
+    
+    <div class="stocks svelte-tz04mn"></div>
+</div>
+
+
+
+			
+		</div>
+    </body>
+</html>

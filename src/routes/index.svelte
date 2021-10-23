@@ -72,7 +72,7 @@
 </script>
 
 <svelte:head>
-    <title>Svelte Stock Watcher pls redeploy</title>
+    <title>Svelte Stock Watcher</title>
     <meta
         name="description"
         content="Simple web application for a user to add basic stock tickers to a dashboard."

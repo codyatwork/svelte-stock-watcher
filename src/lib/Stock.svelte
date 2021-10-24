@@ -1,12 +1,13 @@
 <script>
-    export let high,
-        low,
-        name,
-        open,
-        percentChange,
-        price,
-        symbol,
-        thermometerPercent;
+    export let high;
+    export let low;
+    export let name;
+    export let open;
+    export let price;
+    export let symbol;
+
+    let percentChange;
+    let thermometerPercent;
 
     $: change = price - open;
     $: changeIsPositive = change >= 0;

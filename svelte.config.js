@@ -5,7 +5,10 @@ const config = {
     kit: {
         adapter: static_adapter(),
         paths: {
-            base: '/svelte-stock-watcher',
+            base:
+                process.env.NODE_ENV === 'development'
+                    ? ''
+                    : '/svelte-stock-watcher',
         },
         // hydrate the <div id="svelte"> element in src/app.html
         target: '#svelte',

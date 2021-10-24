@@ -4,6 +4,9 @@ import static_adapter from '@sveltejs/adapter-static';
 const config = {
     kit: {
         adapter: static_adapter(),
+        paths: {
+            base: '/svelte-stock-watcher'
+        },
         // hydrate the <div id="svelte"> element in src/app.html
         target: '#svelte',
     },

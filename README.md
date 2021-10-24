@@ -2,6 +2,8 @@
 
 Simple Svelte 3 web application for a user to add basic stock tickers to a dashboard. Based on the [foreUP stock watcher spec](https://bitbucket.org/foreup/stock-watcher-spec/src/ed84b3f69a1a9401b28f4e5ef15f9cc5cf25c287/).
 
+I have also made a [Vue version of this app](https://github.com/codyatwork/vue-stock-watcher).
+
 ## The stocks are hard-coded. Here are the ones included:
 
 -   GOOG
@@ -13,7 +15,7 @@ Simple Svelte 3 web application for a user to add basic stock tickers to a dashb
 
 ## Developing
 
-Once you've installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've installed dependencies with `npm install`, start a development server:
 
 ```bash
 npm run dev
@@ -21,16 +23,6 @@ npm run dev
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
-
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
 
 ## Questions I would have liked to ask a designer
 

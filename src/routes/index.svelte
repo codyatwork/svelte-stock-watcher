@@ -1,5 +1,6 @@
 <script>
     import Stock from '$lib/Stock.svelte';
+    import { base } from '$app/paths';
 
     const availableStocks = {
         GOOG: {
@@ -77,6 +78,7 @@
         name="description"
         content="Simple web application for a user to add basic stock tickers to a dashboard."
     />
+    <link rel="icon" href="{base}/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

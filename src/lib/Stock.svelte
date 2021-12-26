@@ -248,6 +248,28 @@
         color: var(--titles);
     }
 
+    @media (prefers-color-scheme: dark) {
+        .container {
+            background: #324654;
+        }
+
+        .positive-absolute-change {
+            color: var(--green-light);
+        }
+
+        .negative-absolute-change {
+            color: #ffd0d0;
+        }
+
+        .positive-percent-change {
+            color: #35cd00;
+        }
+
+        .negative-percent-change {
+            color: #ff9393;
+        }
+    }
+
     @media screen and (min-width: 768px) {
         .thermometer {
             display: flex;

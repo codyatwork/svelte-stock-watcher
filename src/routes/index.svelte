@@ -115,20 +115,21 @@
 
 <style>
     :global(:root) {
-        --green: #299e00;
-        --green-light: #6af531;
-        --green-dark: #00a333;
-        --red: #bb0606;
-        --red-light: #eb5631;
-        --red-dark: #901700;
+        --background: #fafafa;
         --button: #284cc9;
-        --titles: #98a1a8;
         --caption: #919aa0;
+        --green: #299e00;
+        --green-dark: #00a333;
+        --green-light: #6af531;
+        --red: #bb0606;
+        --red-dark: #901700;
+        --red-light: #eb5631;
+        --titles: #98a1a8;
         --type: #3e5769;
     }
 
     :global(body) {
-        background: #fafafa;
+        background: var(--background);
         margin: 0;
     }
 
@@ -188,6 +189,29 @@
 
     .stock-wrapper {
         margin-bottom: 0.5rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :global(body) {
+            --titles: #d1dde7;
+            background: var(--type);
+        }
+
+        .container {
+            color: var(--background);
+        }
+
+        .add-input {
+            color: var(--background);
+        }
+
+        .add-input::placeholder {
+            color: #b7c3ca;
+        }
+
+        .error-message {
+            color: var(--red-light);
+        }
     }
 
     @media screen and (min-width: 768px) {

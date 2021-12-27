@@ -1,6 +1,6 @@
 # Svelte Stock Watcher
 
-Simple Svelte 3 web application for a user to add basic stock tickers to a dashboard. Based on the [foreUP stock watcher spec](https://bitbucket.org/foreup/stock-watcher-spec/src/ed84b3f69a1a9401b28f4e5ef15f9cc5cf25c287/).
+Simple Svelte 3 web application for a user to add basic stock tickers to a dashboard. Based on the [foreUP stock watcher spec](https://bitbucket.org/foreup/stock-watcher-spec/src/ed84b3f69a1a9401b28f4e5ef15f9cc5cf25c287/), but also includes a dark theme I created that is activated when your device is set to dark mode.
 
 I have also made a [Vue version of this app](https://github.com/codyatwork/vue-stock-watcher).
 

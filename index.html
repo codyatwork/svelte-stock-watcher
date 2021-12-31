@@ -7,21 +7,20 @@
 
 		
 
-		<link rel="modulepreload" href="/svelte-stock-watcher/_app/start-d16e3e3d.js">
+		<link rel="stylesheet" href="/svelte-stock-watcher/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/svelte-stock-watcher/_app/assets/pages/index.svelte-1749b051.css">
+		<link rel="modulepreload" href="/svelte-stock-watcher/_app/start-56d5e453.js">
 		<link rel="modulepreload" href="/svelte-stock-watcher/_app/chunks/vendor-06ae2a59.js">
 		<link rel="modulepreload" href="/svelte-stock-watcher/_app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/svelte-stock-watcher/_app/layout.svelte-36aece49.js">
 		<link rel="modulepreload" href="/svelte-stock-watcher/_app/pages/index.svelte-2ea5989e.js">
-		<link rel="stylesheet" href="/svelte-stock-watcher/_app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/svelte-stock-watcher/_app/assets/pages/index.svelte-1749b051.css">
 
 		<script type="module">
-			import { start } from "/svelte-stock-watcher/_app/start-d16e3e3d.js";
+			import { start } from "/svelte-stock-watcher/_app/start-56d5e453.js";
 			start({
 				target: document.querySelector("#svelte"),
-				paths: {"base":"/svelte-stock-watcher","assets":""},
+				paths: {"base":"/svelte-stock-watcher","assets":"/svelte-stock-watcher"},
 				session: {},
-				host: location.host,
 				route: true,
 				spa: false,
 				trailing_slash: "never",
@@ -32,14 +31,14 @@
 						import("/svelte-stock-watcher/_app/layout.svelte-36aece49.js"),
 						import("/svelte-stock-watcher/_app/pages/index.svelte-2ea5989e.js")
 					],
-					page: {
-						host: location.host, // TODO this is redundant
-						path: "\u002F",
-						query: new URLSearchParams(""),
-						params: {}
-					}
+					url: new URL("sveltekit://prerender/"),
+					params: {}
 				}
 			});
+		</script><script>
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/service-worker.js');
+			}
 		</script>
     </head>
     <body>

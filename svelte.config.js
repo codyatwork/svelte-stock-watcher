@@ -10,8 +10,6 @@ const config = {
                     ? ''
                     : '/svelte-stock-watcher',
         },
-        // hydrate the <div id="svelte"> element in src/app.html
-        target: '#svelte',
     },
 };
 

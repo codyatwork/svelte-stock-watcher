@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="content-security-policy" content=""><title>Svelte Stock Watcher</title><meta name="description" content="Simple web application for a user to add basic stock tickers to a dashboard." data-svelte="svelte-lgkklz"><link rel="icon" href="/svelte-stock-watcher/favicon.png" data-svelte="svelte-lgkklz"><link rel="preconnect" href="https://fonts.googleapis.com" data-svelte="svelte-lgkklz"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin data-svelte="svelte-lgkklz"><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet" data-svelte="svelte-lgkklz">
+	<link rel="stylesheet" href="/svelte-stock-watcher/_app/assets/pages/index.svelte-1749b051.css">
+	<link rel="modulepreload" href="/svelte-stock-watcher/_app/start-d24ab5c4.js">
+	<link rel="modulepreload" href="/svelte-stock-watcher/_app/chunks/vendor-07327e3e.js">
+	<link rel="modulepreload" href="/svelte-stock-watcher/_app/chunks/paths-396f020f.js">
+	<link rel="modulepreload" href="/svelte-stock-watcher/_app/layout.svelte-8d9e5f15.js">
+	<link rel="modulepreload" href="/svelte-stock-watcher/_app/pages/index.svelte-4029a811.js">
+    </head>
+    <body>
+
+
+
+
+<div class="container svelte-1jlxael"><h1 class="heading svelte-1jlxael">Stock Watcher</h1>
+    <form class="add-input-group svelte-1jlxael"><input class="add-input svelte-1jlxael" type="text" placeholder="Enter stock symbol" value="">
+        <button class="add-button svelte-1jlxael">Add<span class="verbose-button-text svelte-1jlxael"> Stock</span></button></form>
+    
+    <div class="stocks svelte-1jlxael"></div>
+</div>
+
+
+		<script type="module" data-hydrate="bfroxd">
+		import { start } from "/svelte-stock-watcher/_app/start-d24ab5c4.js";
+		start({
+			target: document.querySelector('[data-hydrate="bfroxd"]').parentNode,
+			paths: {"base":"/svelte-stock-watcher","assets":"/svelte-stock-watcher"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/svelte-stock-watcher/_app/layout.svelte-8d9e5f15.js"),
+						import("/svelte-stock-watcher/_app/pages/index.svelte-4029a811.js")
+				],
+				params: {}
+			}
+		});
+	</script></body>
+</html>

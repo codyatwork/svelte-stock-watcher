@@ -11,8 +11,8 @@ const config = {
                     : '/svelte-stock-watcher',
         },
         prerender: {
-            default: true
-        }
+            default: true,
+        },
     },
 };
 

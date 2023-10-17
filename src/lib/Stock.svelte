@@ -165,7 +165,7 @@
     .numbers {
         display: flex;
         flex-direction: column;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 600;
         justify-content: space-between;
         margin-left: 0.5rem;
@@ -185,7 +185,7 @@
     }
 
     .name {
-        font-size: 16px;
+        font-size: 0.875rem;
         margin: 0;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -194,7 +194,7 @@
     }
     .symbol {
         color: var(--titles);
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 600;
     }
 
@@ -205,11 +205,11 @@
     }
 
     .price {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .change {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 600;
         white-space: nowrap;
     }
@@ -237,7 +237,7 @@
 
     .price-history {
         display: none;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 600;
         grid-template-columns: repeat(auto-fit, 5rem);
         row-gap: 0.1rem;
@@ -285,7 +285,7 @@
         }
 
         .name {
-            font-size: 18px;
+            font-size: 1.125rem;
         }
 
         .performance-info {
@@ -294,7 +294,7 @@
         }
 
         .price {
-            font-size: 28px;
+            font-size: 1.75rem;
         }
 
         .change {

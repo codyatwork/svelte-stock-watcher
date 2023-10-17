@@ -52,22 +52,23 @@
             symbol: 'GRPN',
         },
     };
+    const errors = { duplicate: 'duplicate', notFound: 'notFound' };
 
-    let errorMessage = '';
+    let error = null;
     let input = '';
     let stocks = [];
 
     function addStock() {
         if (availableStocks[input]) {
             if (stocks.some((stock) => stock.symbol === input)) {
-                errorMessage = 'This stock is already on your dashboard.';
+                error = errors.duplicate;
             } else {
                 stocks = [...stocks, availableStocks[input]];
-                errorMessage = '';
+                error = null;
                 input = '';
             }
         } else {
-            errorMessage = 'Stock not found.';
+            error = errors.notFound;
         }
     }
 </script>
@@ -101,8 +102,16 @@
             Add<span class="verbose-button-text">&nbsp;Stock</span>
         </button>
     </form>
-    {#if errorMessage.length > 0}
-        <p class="error-message">{errorMessage}</p>
+    {#if error === errors.duplicate}
+        <p class="error-message">This stock is already on your dashboard.</p>
+    {:else if error === errors.notFound}
+        <p class="error-message">
+            Stock not found (they're hardcoded - <a
+                href="https://github.com/codyatwork/svelte-stock-watcher#the-stocks-are-hard-coded-here-are-the-ones-included"
+                target="_blank"
+                rel="noopener">see the available stocks here</a
+            >).
+        </p>
     {/if}
     <div class="stocks">
         {#each stocks as stock}

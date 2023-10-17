@@ -1,47 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="content-security-policy" content=""><title>Svelte Stock Watcher</title><meta name="description" content="Simple web application for a user to add basic stock tickers to a dashboard." data-svelte="svelte-lgkklz"><link rel="icon" href="/svelte-stock-watcher/favicon.png" data-svelte="svelte-lgkklz"><link rel="preconnect" href="https://fonts.googleapis.com" data-svelte="svelte-lgkklz"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin data-svelte="svelte-lgkklz"><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet" data-svelte="svelte-lgkklz">
-	<link rel="stylesheet" href="/svelte-stock-watcher/_app/immutable/assets/pages/index.svelte-1749b051.css">
-	<link rel="modulepreload" href="/svelte-stock-watcher/_app/immutable/start-5e8a79d7.js">
-	<link rel="modulepreload" href="/svelte-stock-watcher/_app/immutable/chunks/index-4dd97ea4.js">
-	<link rel="modulepreload" href="/svelte-stock-watcher/_app/immutable/chunks/paths-1c47712a.js">
-	<link rel="modulepreload" href="/svelte-stock-watcher/_app/immutable/layout.svelte-6d4a7167.js">
-	<link rel="modulepreload" href="/svelte-stock-watcher/_app/immutable/pages/index.svelte-4ddc1fef.js">
+        
+		<link href="./_app/immutable/assets/2.c18acca6.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.dcb81e84.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.c8239c2b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.2aacbf52.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.19242681.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.974ab322.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.c5dc8970.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.143d3fb7.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.39e7ef45.js"><title>Svelte Stock Watcher</title><!-- HEAD_svelte-lgkklz_START --><meta name="description" content="Simple web application for a user to add basic stock tickers to a dashboard."><link rel="icon" href="/svelte-stock-watcher/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet"><!-- HEAD_svelte-lgkklz_END -->
     </head>
     <body>
-        
+        <div style="display: contents">   <div class="container svelte-1jlxael"><h1 class="heading svelte-1jlxael" data-svelte-h="svelte-1n5byw1">Stock Watcher</h1> <form class="add-input-group svelte-1jlxael"><input class="add-input svelte-1jlxael" type="text" placeholder="Enter stock symbol" value=""> <button class="add-button svelte-1jlxael" data-svelte-h="svelte-1shfi37">Add<span class="verbose-button-text svelte-1jlxael"> Stock</span></button></form>  <div class="stocks svelte-1jlxael"></div> </div> 
+			
+			<script>
+				{
+					__sveltekit_wm2w1q = {
+						assets: "/svelte-stock-watcher",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
 
+					const element = document.currentScript.parentElement;
 
+					const data = [null,null];
 
-
-<div class="container svelte-1jlxael"><h1 class="heading svelte-1jlxael">Stock Watcher</h1>
-    <form class="add-input-group svelte-1jlxael"><input class="add-input svelte-1jlxael" type="text" placeholder="Enter stock symbol" value="">
-        <button class="add-button svelte-1jlxael">Add<span class="verbose-button-text svelte-1jlxael"> Stock</span></button></form>
-    
-    <div class="stocks svelte-1jlxael"></div>
-</div>
-
-
-		<script type="module" data-sveltekit-hydrate="bfroxd">
-		import { start } from "/svelte-stock-watcher/_app/immutable/start-5e8a79d7.js";
-		start({
-			target: document.querySelector('[data-sveltekit-hydrate="bfroxd"]').parentNode,
-			paths: {"base":"/svelte-stock-watcher","assets":"/svelte-stock-watcher"},
-			session: {},
-			route: true,
-			spa: false,
-			trailing_slash: "never",
-			hydrate: {
-				status: 200,
-				error: null,
-				nodes: [0, 2],
-				params: {},
-				routeId: ""
-			}
-		});
-	</script>
+					Promise.all([
+						import("./_app/immutable/entry/start.dcb81e84.js"),
+						import("./_app/immutable/entry/app.974ab322.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
     </body>
 </html>

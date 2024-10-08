@@ -1,0 +1,1 @@
+var _;const e=((_=globalThis.__sveltekit_dilxuk                        )==null?void 0:_.base)??"/svelte-stock-watcher";var s;const t=((s=globalThis.__sveltekit_dilxuk                        )==null?void 0:s.assets)??e;export{t as a,e as b};

@@ -9,7 +9,7 @@
         "format": "prettier --ignore-path .gitignore --write --plugin prettier-plugin-svelte ."
     },
     "devDependencies": {
-        "@sveltejs/adapter-static": "^3.0.6",
+        "@sveltejs/adapter-static": "^3.0.8",
         "@sveltejs/kit": "^2.13.0",
         "eslint": "^9.17.0",
         "eslint-config-prettier": "^9.1.0",

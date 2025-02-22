@@ -48,7 +48,7 @@
             <div
                 class="arrow"
                 style="bottom:calc({thermometerPercent}% - 6px)"
-            />
+            ></div>
         </div>
         <div class="numbers">
             <span>{displayPrice(high)}</span>

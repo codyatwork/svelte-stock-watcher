@@ -19,7 +19,7 @@
         "prettier": "^3.6.2",
         "prettier-plugin-svelte": "^3.4.0",
         "svelte": "^5.38.7",
-        "vite": "^7.1.5"
+        "vite": "^7.1.6"
     },
     "type": "module"
 }
